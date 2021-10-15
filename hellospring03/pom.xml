@@ -9,8 +9,32 @@
 	</parent>
 	<artifactId>hellospring03</artifactId>
 	<packaging>war</packaging>
-	
+
+	<properties>
+		<org.springframework-version>4.3.4.RELEASE</org.springframework-version>
+	</properties>
+
+
 	<dependencies>
+	
+		<dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-context</artifactId>
+	        <version>${org.springframework-version}</version>
+ 	    </dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+	        <artifactId>spring-webmvc</artifactId>
+	        <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework</groupId>
+	        <artifactId>spring-web</artifactId>
+	        <version>${org.springframework-version}</version>
+		</dependency>
+		
 		<!-- Servlet -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -27,7 +51,7 @@
 	</dependencies>
 	
 	<build>
-		<finalName>helloweb03</finalName>
+		<finalName>hellospring03</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -43,12 +67,11 @@
 				<artifactId>tomcat-maven-plugin</artifactId>
 				<configuration>
 					<url>http://127.0.0.1:8088/manager/text</url>
-					<path>/hellospring03</path>
+					<path>/hellsping03</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>
+			</plugin>					
 		</plugins>
-	</build>
-	
+	</build>		
 </project>
