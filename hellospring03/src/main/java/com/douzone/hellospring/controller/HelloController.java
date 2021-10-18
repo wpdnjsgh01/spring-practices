@@ -41,4 +41,12 @@ public class HelloController {
 		return "redirect:/hello";
 	}
 	
+	@RequestMapping
+	public ModelAndView hello3() {
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("name", mav);
+		mav.setViewName("/WEB-INF/views/hello3.jsp");
+		return mav;
+	}
+	
 }
