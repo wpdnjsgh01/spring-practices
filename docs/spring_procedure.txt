@@ -1,0 +1,15 @@
+1. maven project add (war type)
+2. web.xml add (java ee tools generate)
+3. right click - properties - target runtime - tomcat select
+4. pom.mxl, web.xml setting
+   1) /WEB-INF/applicationContext.xml (Root Application Context)
+   2) /WEB-INF/spring-servlet.xml     (Web Application Context)
+
+5. package, source code setting
+	com.douzone.mysite.controller
+	com.douzone.mysite.service
+	com.douzone.mysite.repository
+	com.douzone.mysite.vo
+
+6. views/*.jsp file setting
+7. controller, service, repository source code setting 
