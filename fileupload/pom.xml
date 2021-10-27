@@ -7,7 +7,7 @@
 		<artifactId>spring-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>hellospring03</artifactId>
+	<artifactId>fileupload</artifactId>
 	<packaging>war</packaging>
 	
 	<properties>
@@ -56,10 +56,24 @@
 			<version>2.0</version>
 			<scope>provided</scope>
 		</dependency>
+		
+		<!-- common fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.4</version>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
-		<finalName>hellospring03</finalName>
+		<finalName>fileupload</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -76,11 +90,11 @@
 				<version>1.1</version>
 				<configuration>
 					<url>http://127.0.0.1:8088/manager/text</url>
-					<path>/hellsping03</path>
+					<path>/fileupload</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>
+	</build>	
 </project>
